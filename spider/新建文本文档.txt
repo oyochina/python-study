@@ -1,0 +1,7 @@
+def getImg(html):
+    reg = r'src="(.+?\.jpg)" pic_ext'
+    imgre = re.compile(reg)
+    imglist = re.findall(imgre,html)
+    return imglist
+
+<img class="BDE_Image" src="http://imgsrc.baidu.com/forum/w%3D580/sign=58af1eb61ad8bc3ec60806c2b28aa6c8/dba26c13632762d0c32d0f33a3ec08fa503dc6fe.jpg" pic_ext="jpeg"  changedsize="true" width="560" height="560">
